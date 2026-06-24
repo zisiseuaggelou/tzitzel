@@ -408,5 +408,8 @@ def action():
     print(f"User action: {action_type} on profile index {index}")
     return jsonify({"status": "ok"})
 
-if __name__ == "__main__":
-    app.run(debug=True)
+
+
+if __name__ == '__main__':
+    app.run()
+    
