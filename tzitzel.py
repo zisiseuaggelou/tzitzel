@@ -329,10 +329,10 @@ HTML_TEMPLATE = """
         </div>
     </div>
 
-<div class="buttons">
-    <button onclick="sendAction('like')">❤️ Like</button>
-    <button onclick="sendAction('next')">➡️ Next</button>
-</div>
+    <div class="buttons">
+        <button onclick="sendAction('like')">❤️ Like</button>
+        <button onclick="sendAction('next')">➡️ Next</button>
+    </div>
 
     <div class="bottom-nav">
         <div class="nav-item active">
