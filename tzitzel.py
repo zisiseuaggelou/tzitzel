@@ -390,6 +390,24 @@ HTML_TEMPLATE = """
     document.addEventListener("DOMContentLoaded", () => {
         showProfile(currentIndex);
     });
+<script>
+function sendAction(action) {
+    fetch('/action', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ action: action })
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log("Action sent:", data);
+        location.reload();
+    });
+}
+
+// Υπάρχει ήδη ο κώδικας σου εδώ για showProfile κ.λπ.
+document.addEventListener("DOMContentLoaded", () => {
+    showProfile(currentIndex);
+});
 </script>
 </body>
 </html>
