@@ -328,6 +328,24 @@ HTML_TEMPLATE = """
             </div>
         </div>
     </div>
+    
+    <div class="card-info">
+    <div class="name-row">
+        <h2 id="profile-name">Όνομα</h2>
+        <span id="profile-age">0</span>
+    </div>
+    <p class="bio" id="profile-bio">Bio...</p>
+    <div class="chips">
+        <div class="chip">Χόμπι σου</div>
+        <div class="chip">Νέο μέλος</div>
+        <div class="chip">Titzel vibes ✨</div>
+    </div>
+</div>
+
+<div class="buttons">
+    <button onclick="sendAction('like')">❤️ Like</button>
+    <button onclick="sendAction('next')">➡️ Next</button>
+</div>
 
     <div class="bottom-nav">
         <div class="nav-item active">
